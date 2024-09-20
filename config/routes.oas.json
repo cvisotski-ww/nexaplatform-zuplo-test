@@ -24,7 +24,8 @@
           "policies": {
             "inbound": [
               "api-key-inbound",
-              "rate-limit-inbound"
+              "rate-limit-inbound",
+              "set-headers-inbound"
             ]
           }
         },
