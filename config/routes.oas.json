@@ -11,7 +11,7 @@
       },
       "get": {
         "summary": "Water Usage",
-        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "description": "Super awesome api for getting water usage in volume from Nexa.",
         "x-zuplo-route": {
           "corsPolicy": "none",
           "handler": {
