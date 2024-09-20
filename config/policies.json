@@ -26,6 +26,38 @@
       },
       "name": "rate-limit-inbound",
       "policyType": "rate-limit-inbound"
+    },
+    {
+      "handler": {
+        "export": "SetHeadersOutboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "$env(BACKEND_SECRET)"
+            }
+          ]
+        }
+      },
+      "name": "set-headers-outbound",
+      "policyType": "set-headers-outbound"
+    },
+    {
+      "handler": {
+        "export": "SetHeadersInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "$env(BACKEND_SECRET)"
+            }
+          ]
+        }
+      },
+      "name": "set-headers-inbound",
+      "policyType": "set-headers-inbound"
     }
   ]
 }
